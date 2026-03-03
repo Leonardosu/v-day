@@ -1,31 +1,31 @@
 const gifStages = [
     "https://media.tenor.com/EBV7OT7ACfwAAAAj/u-u-qua-qua-u-quaa.gif",    // 0 normal
-    "https://media1.tenor.com/m/uDugCXK4vI4AAAAd/chiikawa-hachiware.gif",  // 1 confused
-    "https://media.tenor.com/f_rkpJbH1s8AAAAj/somsom1012.gif",             // 2 pleading
-    "https://media.tenor.com/OGY9zdREsVAAAAAj/somsom1012.gif",             // 3 sad
-    "https://media1.tenor.com/m/WGfra-Y_Ke0AAAAd/chiikawa-sad.gif",       // 4 sadder
-    "https://media.tenor.com/CivArbX7NzQAAAAj/somsom1012.gif",             // 5 devastated
-    "https://media.tenor.com/5_tv1HquZlcAAAAj/chiikawa.gif",               // 6 very devastated
-    "https://media1.tenor.com/m/uDugCXK4vI4AAAAC/chiikawa-hachiware.gif"  // 7 crying runaway
+    "https://media.tenor.com/sWXhCC4A2woAAAAi/bubu-bubu-dudu.gif",  // 1 confused
+    "https://media.tenor.com/tsFBHGxponYAAAAi/bubu-dudu.gif",             // 2 pleading
+    "https://media.tenor.com/UVHbwRHMSCgAAAAi/bubu-dudu-sseeyall.gif",             // 3 sad
+    "https://media.tenor.com/b_RmNm_WKo0AAAAi/dudu-crying.gif",       // 4 sadder
+    "https://media.tenor.com/g7lOcE8YYZsAAAAi/running-panda.gif",             // 5 devastated
+    "https://media.tenor.com/0XxZLMzjYV0AAAAi/dudu-crying-texting.gif",               // 6 very devastated
+    "https://media.tenor.com/eU0GphP1dRoAAAAi/dudu-cry-dudu-funny.gif"  // 7 crying runaway
 ]
 
 const noMessages = [
-    "No",
-    "Are you positive? 🤔",
-    "Pookie please... 🥺",
-    "If you say no, I will be really sad...",
-    "I will be very sad... 😢",
-    "Please??? 💔",
-    "Don't do this to me...",
-    "Last chance! 😭",
-    "You can't catch me anyway 😜"
+    "Não",
+    "Você tem certeza? 🤔",
+    "Porfavor mozão... 🥺",
+    "Se você dizer não, eu realmente vou ficar triste mozão...",
+    "Vou ficar bem triste... 😢",
+    "Tem certeza??? 💔",
+    "Não faça isso comigo amor...",
+    "Vou te dar uma última chance! 😭",
+    "Você não vai conseguir me alcançar! 😜"
 ]
 
 const yesTeasePokes = [
-    "try saying no first... I bet you want to know what happens 😏",
-    "go on, hit no... just once 👀",
-    "you're missing out 😈",
-    "click no, I dare you 😏"
+    "Tente dizer \"Não\" primeiro... Aposto que você quer saber o que acontece hein mozão... 😏",
+    "Vai lá, aperte em \"Não\"... só uma vez 👀",
+    "Você está perdendo hein... 😈",
+    "Aperte em \"Não\", Dúvido 😏"
 ]
 
 let yesTeasedCount = 0
@@ -81,7 +81,7 @@ function showTeaseMessage(msg) {
     toast.textContent = msg
     toast.classList.add('show')
     clearTimeout(toast._timer)
-    toast._timer = setTimeout(() => toast.classList.remove('show'), 2500)
+    toast._timer = setTimeout(() => toast.classList.remove('show'), 2000)
 }
 
 function handleNoClick() {
