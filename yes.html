@@ -1,14 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uhuul! 🎉</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <style>
+        .photo-wall {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .photo-wall img {
+            width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-wall img:hover {
+            transform: scale(1.05);
+        }
+
+        .love-note {
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgba(255,255,255,0.8);
+            border-radius: 15px;
+        }
+
+        .love-note textarea {
+            width: 100%;
+            height: 120px;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            resize: none;
+        }
+    </style>
 </head>
+
 <body>
     <div class="hearts-bg"></div>
 
@@ -16,10 +63,21 @@
         <h1 class="yes-title">Sabia que você iria dizer SIM! 🎉</h1>
 
         <div class="gif-container">
-            <img id="cat-gif" src="https://media.tenor.com/jmWqHgGS0ToAAAAi/dudu-bubu.gif" alt="celebrating">
+            <img id="cat-gif"
+                 src="https://media.tenor.com/jmWqHgGS0ToAAAAi/dudu-bubu.gif"
+                 alt="celebrating">
         </div>
 
-        <p class="yes-message">Você acabou de me fazer a pessoa mais feliz! 💕</p>
+        <p class="yes-message">
+            Você acabou de me fazer a pessoa mais feliz! 💕
+        </p>
+
+        <!-- 📸 MURAL DE FOTOS -->
+        <div class="photo-wall">
+            <img src="images/photo1.jpg" alt="Foto 1">
+            <img src="images/photo2.jpg" alt="Foto 2">
+        </div>
+
     </div>
 
     <audio id="bg-music" loop>

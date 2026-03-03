@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html, body {
+    height: 100%;
+    overflow-y: auto;
+}
 body {
     background-color: #FFE4E8;
     font-family: 'Nunito', sans-serif;
@@ -11,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-image:
         radial-gradient(circle at 15% 85%, #ffb3c1 0%, transparent 40%),
         radial-gradient(circle at 85% 15%, #ff8fa3 0%, transparent 40%),
